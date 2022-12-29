@@ -2,6 +2,8 @@ $textColorDark: #252B42;
 $textColorGrey: #737373;
 
 .header {
+	transition: 0.3s ;
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -29,9 +31,22 @@ $textColorGrey: #737373;
 		color: $textColorDark;
 	}
 
-	&__burger-button{
-		
+	@media (max-width: 560px) {
+		&__container{
+			min-height: 70px;
+		}
 	}
+}
+
+p{
+	margin-top: 70px;
+}
+
+.header-scrolled{
+	backdrop-filter: blur(8px);
+	background: rgba($color: #ffffff, $alpha: 0.7);
+	box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.3);
+
 }
 
 .menu {
@@ -70,20 +85,41 @@ $textColorGrey: #737373;
 		margin-bottom: 6px;
 
 		background-color: $textColorGrey;
+
+		transition: 0.3s;
+
+		&:last-child {
+			margin: 0;
+		}
 	}
 }
 
-.popup{
+.burger-button-active {
+	.burger-button__span:first-child{
+		transform: translateY(9px) rotate(45deg);
+	}
+
+	.burger-button__span:nth-child(2){
+		opacity: 0;
+	}
+
+	.burger-button__span:last-child{
+		transform: translateY(-9px) rotate(-45deg);
+	}
+}
+
+.popup {
 	position: fixed;
 	right: -100%;
-	top: 104px;
+	top: 70px;
 	
 	width: 100%;
 	height: 100%;
 
-	z-index: 100;
+	z-index: 99;
 
-	background-color: transparent;
+	backdrop-filter: blur(8px);
+	background: rgba($color: #ffffff, $alpha: 0.5);
 
 	transition: 0.3s;
 }
@@ -112,7 +148,7 @@ $textColorGrey: #737373;
 	}
 }
 
-.popup-open{
+.popup-open {
 	right: 0;
 }
 
@@ -125,8 +161,8 @@ $textColorGrey: #737373;
 		display: none;
 	}
 
-	.header{
-		&__container{
+	.header {
+		&__container {
 			justify-content: space-between;
 		}
 	}

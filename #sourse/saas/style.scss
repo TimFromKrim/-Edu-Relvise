@@ -12,6 +12,10 @@ body {
 	color: $textColorDark;
 }
 
+.noScroll {
+	overflow: hidden;
+}
+
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
