@@ -1,3 +1,29 @@
 @import "_reset.scss";
-@import "_fonts.scss";
 
+$textColorDark: #252B42;
+
+body {
+	height: 100%;
+
+	font-family: 'Montserrat';
+	line-height: 1;
+	font-size: 14px;
+	font-weight: 500;
+	color: $textColorDark;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+._container {
+	max-width: 1046px;
+	margin: 0 auto;
+	padding: 0 30px;
+	box-sizing: content-box;
+}
+
+
+@import "_fonts.scss";
+@import "_header.scss";
