@@ -130,10 +130,6 @@ body {
   }
 }
 
-p {
-  margin-top: 70px;
-}
-
 .header-scrolled {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
