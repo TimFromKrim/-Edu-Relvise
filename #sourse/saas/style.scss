@@ -28,6 +28,21 @@ body {
 	box-sizing: content-box;
 }
 
+._ibg{
+	position: relative;
+
+	.intro__img-background{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
 
 @import "_fonts.scss";
 @import "_header.scss";
+
+@import "_intro-section";
