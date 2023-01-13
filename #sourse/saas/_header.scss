@@ -1,8 +1,8 @@
-$textColorDark: #252B42;
+$textColorDark: #252b42;
 $textColorGrey: #737373;
 
 .header {
-	transition: 0.3s ;
+	transition: 0.3s;
 
 	position: fixed;
 	top: 0;
@@ -11,41 +11,38 @@ $textColorGrey: #737373;
 	width: 100%;
 
 	z-index: 100;
-	
 
 	&__container {
 		display: flex;
 		align-items: center;
 
 		min-height: 104px;
-
 	}
 
 	&__logo {
 		margin-right: 134px;
 	}
 
-	&__link{
+	&__link {
 		font-weight: bold;
 		font-size: 24px;
 		color: $textColorDark;
 	}
 
 	@media (max-width: 560px) {
-		&__container{
+		&__container {
 			min-height: 55px;
 		}
 	}
 }
 
-.header-scrolled{
+.header-scrolled {
 	backdrop-filter: blur(8px);
 	background: rgba($color: #ffffff, $alpha: 0.7);
 	box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.3);
 }
 
 .menu {
-
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
@@ -55,7 +52,7 @@ $textColorGrey: #737373;
 	&__item {
 		margin-right: 21px;
 
-		&:last-child{
+		&:last-child {
 			margin: 0;
 		}
 	}
@@ -67,12 +64,12 @@ $textColorGrey: #737373;
 	}
 }
 
-// Burger menu 
+// Burger menu
 
 .burger-button {
 	display: none;
 
-	&__span{
+	&__span {
 		display: block;
 
 		width: 30px;
@@ -90,15 +87,15 @@ $textColorGrey: #737373;
 }
 
 .burger-button-active {
-	.burger-button__span:first-child{
+	.burger-button__span:first-child {
 		transform: translateY(9px) rotate(45deg);
 	}
 
-	.burger-button__span:nth-child(2){
+	.burger-button__span:nth-child(2) {
 		opacity: 0;
 	}
 
-	.burger-button__span:last-child{
+	.burger-button__span:last-child {
 		transform: translateY(-9px) rotate(-45deg);
 	}
 }
@@ -107,7 +104,7 @@ $textColorGrey: #737373;
 	position: fixed;
 	right: -100%;
 	top: 55px;
-	
+
 	width: 100%;
 	height: 100%;
 
@@ -120,7 +117,8 @@ $textColorGrey: #737373;
 }
 
 .popup-menu {
-	&__menu { }
+	&__menu {
+	}
 	&__list {
 		display: flex;
 		flex-direction: column;
@@ -131,7 +129,7 @@ $textColorGrey: #737373;
 	&__item {
 		margin-bottom: 40px;
 
-		&:last-child{
+		&:last-child {
 			margin: 0;
 		}
 	}
@@ -139,7 +137,7 @@ $textColorGrey: #737373;
 		font-size: 25px;
 		font-weight: 600;
 		line-height: 171%;
-		color: $textColorGrey;
+		color: rgb(69, 69, 69);
 	}
 }
 
@@ -147,8 +145,8 @@ $textColorGrey: #737373;
 	right: 0;
 }
 
-@media (max-width: 900px){
-	.header{
+@media (max-width: 900px) {
+	.header {
 		backdrop-filter: blur(8px);
 		background: rgba($color: #ffffff, $alpha: 0.7);
 		box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.3);
@@ -160,7 +158,7 @@ $textColorGrey: #737373;
 		display: block;
 	}
 
-	.menu{
+	.menu {
 		display: none;
 	}
 

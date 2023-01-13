@@ -1,5 +1,6 @@
 const burgerButton = document.querySelector("#burger-button");
 const popup = document.querySelector("#popup");
+
 const body = document.body;
 const header = document.querySelector("#header");
 
@@ -18,6 +19,6 @@ window.addEventListener('scroll', () => {
 	} else {
 	  header.classList.remove('header-scrolled');
 	}
- });
+});
 
 console.log("Ok!");
