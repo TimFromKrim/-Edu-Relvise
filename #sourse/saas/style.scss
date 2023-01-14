@@ -5,6 +5,8 @@ $textColorDark: #252B42;
 body {
 	height: 100%;
 
+	background-color: #FAFAFA;
+
 	font-family: 'Montserrat';
 	line-height: 1;
 	font-size: 14px;
@@ -31,7 +33,7 @@ body {
 ._ibg{
 	position: relative;
 
-	.intro__img-background{
+	img{
 		width: 100%;
 		height: 100%;
 
@@ -43,8 +45,18 @@ body {
 	}
 }
 
+._center-absolute {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
 
 @import "_fonts.scss";
 @import "_header.scss";
 
 @import "_intro-section";
+@import "_services-card-section";
