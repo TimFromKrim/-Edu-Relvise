@@ -95,7 +95,7 @@
 		}
 
 		&__services-card {
-			width: 328px;
+			width: 300px;
 		}
 	}
 
@@ -117,5 +117,17 @@
 		}
 
 		justify-self: center;
+	}
+}
+
+@media (max-width: 320px) {
+	.services {
+		&__container {
+		}
+
+		&__services-card {
+			width: 260px;
+			padding: 25px 20px;
+		}
 	}
 }

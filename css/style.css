@@ -479,7 +479,7 @@ body {
 }
 @media (max-width: 560px) {
   .services__services-card {
-    width: 328px;
+    width: 300px;
   }
   .services-card {
     justify-self: center;
@@ -500,5 +500,11 @@ body {
   }
   .services-card:nth-child(even) {
     justify-self: center;
+  }
+}
+@media (max-width: 320px) {
+  .services__services-card {
+    width: 260px;
+    padding: 25px 20px;
   }
 }
