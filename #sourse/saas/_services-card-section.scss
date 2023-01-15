@@ -26,12 +26,27 @@
 
 	transition: 0.25s ease-in-out;
 
-		// &:hover {
-		// 	background-color: #0D5C63; // Нереализованная функция наведения
-		// }
+	@media (min-width: 1101px) {
+		&:hover {
+			background-color: #0D5C63;
+			svg {
+				fill: white;
+				}
+
+			.services-card__title {
+				color: white;
+			}
+
+			.services-card__sub-title {
+				color: white;
+			}
+		}
+	}
 
 	&__ico {
 		margin-bottom: 10px;
+		width: 48px;
+		fill: #0D5C63;
 	}
 
 	&__title {

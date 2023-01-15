@@ -425,8 +425,24 @@ body {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
+@media (min-width: 1101px) {
+  .services-card:hover {
+    background-color: #0D5C63;
+  }
+  .services-card:hover svg {
+    fill: white;
+  }
+  .services-card:hover .services-card__title {
+    color: white;
+  }
+  .services-card:hover .services-card__sub-title {
+    color: white;
+  }
+}
 .services-card__ico {
   margin-bottom: 10px;
+  width: 48px;
+  fill: #0D5C63;
 }
 .services-card__title {
   margin-bottom: 10px;
