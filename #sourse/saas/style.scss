@@ -1,4 +1,5 @@
 @import "_reset.scss";
+@import "_fonts.scss";
 
 $textColorDark: #252B42;
 
@@ -7,7 +8,7 @@ body {
 
 	background-color: #FAFAFA;
 
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', serif;
 	line-height: 1;
 	font-size: 14px;
 	font-weight: 500;
@@ -21,6 +22,7 @@ body {
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
+	padding: 0 5px;
 }
 
 ._container {
@@ -46,17 +48,41 @@ body {
 }
 
 ._center-absolute {
-	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+
 	margin-right: -50%;
 	transform: translate(-50%, -50%)
 }
 
+._standard-h2 {
+	margin-bottom: 10px;
 
-@import "_fonts.scss";
+	text-align: center;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 142%;
+	letter-spacing: 0.2px;
+	color: #252B42;
+}
+
+._standard-subTitle {
+	text-align: center;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 143%;
+	letter-spacing: 0.2px;
+}
+
 @import "_header.scss";
 
 @import "_intro-section";
 @import "_services-card-section";
+@import "_experience-section"

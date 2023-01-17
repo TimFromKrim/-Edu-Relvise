@@ -1,14 +1,14 @@
 .services {
-	margin-top: -111px;
 
 	z-index: 2;
+	margin-top: -111px;
 
 	&__container {
 		display: grid; 
 		grid-auto-columns: 1fr; 
 		grid-template-columns: 1fr 1fr 1fr; 
 		grid-template-rows: 1fr; 
-		gap: 0px 30px; 
+		gap: 0 30px;
 	}
 
 	&__services-card {
@@ -20,9 +20,9 @@
 	position: relative;
 
 	z-index: 2;
+	box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
 
 	background: white;
-	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 
 	transition: 0.25s ease-in-out;
 
@@ -44,31 +44,31 @@
 	}
 
 	&__ico {
-		margin-bottom: 10px;
 		width: 48px;
+		margin-bottom: 10px;
 		fill: #0D5C63;
 	}
 
 	&__title {
 		margin-bottom: 10px;
+		color: $textColorDark;
 
-		font-family: 'Montserrat';
+		font-family: 'Montserrat', serif;
+		font-size: 24px;
 		font-style: normal;
 		font-weight: 700;
-		font-size: 24px;
 		line-height: 133%;
 		letter-spacing: 0.1px;
-		color: $textColorDark;
 	}
 
 	&__sub-title {
-	font-family: 'Montserrat';
+	color: $textColorGrey;
+		font-family: 'Montserrat', serif;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 14px;
 	line-height: 143%;
 	letter-spacing: 0.2px;
-	color: $textColorGrey;
 }
 }
 
@@ -77,7 +77,7 @@
 		&__container {
 			grid-template-columns: 1fr; 
 			grid-template-rows: 1fr 1fr 1fr; 
-			gap: 30px 0px; 
+			gap: 30px 0;
 		}
 
 		&__services-card {
