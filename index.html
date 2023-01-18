@@ -1,98 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="wrapper">
-			<!-- Header -->
-			<header class="header" id="header">
-				<div class="header__container _container">
-					<div class="header__logo">
-						<a class="header__link" href="#">Relvise</a>
-					</div>
-					<nav class="header__menu menu">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="#" class="menu__link">Home</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Product</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Pricing</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Contact</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="header__burger-button burger-button" id="burger-button">
-						<span class="burger-button__span"></span>
-						<span class="burger-button__span"></span>
-						<span class="burger-button__span"></span>
-					</div>
-				</div>
-			</header>
 
-			<!-- Popup menu -->
-			<div class="popup" id="popup">
-				<nav class="popup__menu popup-menu">
-					<ul class="popup-menu__list">
-						<li class="popup-menu__item">
-							<a href="#" class="popup-menu__link">Home</a>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Relvise</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Header -->
+		<header class="header" id="header">
+			<div class="header__container _container">
+				<div class="header__logo">
+					<a class="header__link" href="#">Relvise 0.9</a>
+				</div>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">Home</a>
 						</li>
-						<li class="popup-menu__item">
-							<a href="#" class="popup-menu__link">Product</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Product</a>
 						</li>
-						<li class="popup-menu__item">
-							<a href="#" class="popup-menu__link">Pricing</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Pricing</a>
 						</li>
-						<li class="popup-menu__item">
-							<a href="#" class="popup-menu__link">Contact</a>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Contact</a>
 						</li>
 					</ul>
 				</nav>
+				<div class="header__burger-button burger-button" id="burger-button">
+					<span class="burger-button__span"></span>
+					<span class="burger-button__span"></span>
+					<span class="burger-button__span"></span>
+				</div>
 			</div>
+		</header>
 
-			<main class="main">
-				<section class="main__intro intro">
-					<div class="intro__container _container">
-						<div class="intro__body">
-							<h1 class="intro__title">Finance and Consultancy Solution</h1>
-							<p class="intro__sub-title">
-								We know how large objects will act,<br />but things on a small
-								scale.
-							</p>
-							<div class="intro__buttons">
-								<button class="intro__button">
-									Get Quote Now
-								</button>
-								<button class="intro__button intro__button_transparent">
-									Learn More
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="intro__background _ibg">
-						<img class="intro__img-background"
-							src="img/intro/intro-background.jpg"
-							srcset="img/intro/intro-background@2.jpg 2x"
-							alt="error"
-						/>
-					</div>
-				</section>
-
-				
-			</main>
+		<!-- Popup menu -->
+		<div class="popup" id="popup">
+			<nav class="popup__menu popup-menu">
+				<ul class="popup-menu__list">
+					<li class="popup-menu__item">
+						<a href="#" class="popup-menu__link">Home</a>
+					</li>
+					<li class="popup-menu__item">
+						<a href="#" class="popup-menu__link">Product</a>
+					</li>
+					<li class="popup-menu__item">
+						<a href="#" class="popup-menu__link">Pricing</a>
+					</li>
+					<li class="popup-menu__item">
+						<a href="#" class="popup-menu__link">Contact</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 
+		<main class="main">
+			<!-- Intro section -->
+			<section class="main__intro intro">
+				<div class="intro__container _container">
+					<div class="intro__body">
+						<h1 class="intro__title">Finance and Consultancy Solution</h1>
+						<p class="intro__sub-title">
+							We know how large objects will act,<br />but things on a small
+							scale.
+						</p>
+						<div class="intro__buttons">
+							<button class="intro__button">Get Quote Now</button>
+							<button class="intro__button intro__button_transparent">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="intro__background _ibg">
+					<img class="intro__img-background" src="img/intro/intro-background.jpg"
+						srcset="img/intro/intro-background@2.jpg 2x" alt="error" />
+				</div>
+			</section>
+
+			<!-- Services -->
+			<section class="services">
+				<div class="services__container _container">
+					<div class="services__services-card services-card">
+						<div class="services-card__wrapper">
+							<svg class="services-card__ico" 
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#0D5C63">
+								<path
+									d="M42.5886 8.52554H37.519V3.45592c0-.89637-.3561-1.75602-.9899-2.38984-.6338-.633829-1.4935-.9899081-2.3898-.9899081H13.8608c-.8964 0-1.756.3560791-2.3899.9899081-.6338.63382-.9899 1.49347-.9899 2.38984v5.06962H5.41142c-1.34455 0-2.63403.53412-3.58477 1.48486-.950734.9507-1.484853 2.2402-1.484853 3.5848v23.6582c0 .8963.356079 1.756.989903 2.3898.63383.6339 1.49348.9899 2.38984.9899H44.2785c.8964 0 1.756-.356 2.3898-.9899.6339-.6338.99-1.4935.99-2.3898V13.5952c0-1.3446-.5342-2.6341-1.4849-3.5848-.9507-.95074-2.2402-1.48486-3.5848-1.48486ZM13.8608 3.45592h20.2785v5.06962H13.8608V3.45592ZM44.2785 37.2534H3.72154V22.0445H17.2405v8.4494h13.519v-8.4494h13.519v15.2089ZM20.6203 22.0445h6.7595v5.0696h-6.7595v-5.0696ZM3.72154 18.6648v-5.0696c0-.4482.17804-.878.49496-1.195.31691-.3169.74673-.4949 1.19492-.4949H42.5886c.4482 0 .878.178 1.195.4949.3169.317.4949.7468.4949 1.195v5.0696H3.72154Z" />
+							</svg>
+							<h3 class="services-card__title">Environmental Consulting</h3>
+							<p class="services-card__sub-title">
+								We focus on ergonomics and meeting you where you work.
+							</p>
+						</div>
+					</div>
+					<div class="services__services-card services-card">
+						<div class="services-card__wrapper">
+							<svg class="services-card__ico" 
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="#0D5C63">
+								<path
+									d="M43.6503 13.75H4.35031c-.018 0-.03.0119-.03.0296v5.4053c0 3.5442 2.94 6.4188 6.55799 6.4188 2.442 0 4.572-1.3039 5.706-3.242.174-.3023.504-.4919.858-.4919s.678.1896.858.4919c1.128 1.9381 3.258 3.242 5.7 3.242 2.448 0 4.584-1.3099 5.706-3.2539.174-.2963.492-.48.834-.48h.036c.348 0 .66.1837.834.48 1.128 1.944 3.264 3.2539 5.712 3.2539 3.618 0 6.558-2.8746 6.558-6.4188v-5.4053c0-.0177-.012-.0296-.03-.0296Z"
+									opacity=".15" />
+								<path
+									d="M46.2 9.48885V1.89659C46.2.847537 45.342 0 44.28 0H3.72003C2.65804 0 1.80004.847537 1.80004 1.89659v7.59226C.798037 9.54812.00003718 10.372.00003718 11.3795v7.8056C-.00380525 20.6197.290253 22.0398.864037 23.3576c.258003.6046.576003 1.1735.936003 1.7129V45.518c0 1.0432.858 1.8966 1.91999 1.8966H44.28c1.062 0 1.92-.8475 1.92-1.8966V25.0705c.3657-.5407.679-1.1142.936-1.7129.57-1.3216.864-2.7263.864-4.1725v-7.8056c0-1.0075-.798-1.83138-1.8-1.89065ZM6.12003 4.26732H41.88v5.21561H6.12003V4.26732ZM27.84 43.1532h-7.68v-6.1698h7.68v6.1698Zm14.064 0H31.68v-8.0664c0-1.049-.858-1.8966-1.92-1.8966H18.24c-1.062 0-1.92.8476-1.92 1.8966v8.0664H6.12003V28.7985c.174.0829.354.1659.54.237 1.338.5572 2.76.8357 4.22397.8357 1.464 0 2.88-.2785 4.224-.8357.828-.3437 1.608-.7823 2.322-1.3098.012-.0059.024-.0059.036 0 .7162.5297 1.4962.9697 2.322 1.3098 1.338.5572 2.76.8357 4.224.8357 1.464 0 2.88-.2785 4.224-.8357.828-.3437 1.608-.7823 2.322-1.3098.012-.0059.024-.0059.036 0 .7162.5297 1.4962.9697 2.322 1.3098 1.338.5572 2.76.8357 4.224.8357 1.464 0 2.88-.2785 4.224-.8357.18-.077.36-.1541.54-.237v14.3547Zm1.776-23.9681c0 3.5443-2.94 6.4188-6.558 6.4188-2.448 0-4.584-1.3098-5.712-3.2538-.174-.2964-.486-.4801-.834-.4801h-.036c-.342 0-.66.1837-.834.4801-.5756.9916-1.4068 1.8151-2.409 2.3866-1.0022.5715-2.1398.8707-3.297.8672-2.442 0-4.572-1.3039-5.7-3.242-.18-.3022-.504-.4919-.858-.4919s-.684.1897-.858.4919c-.579.9879-1.4112 1.8076-2.4129 2.3768-1.0017.5691-2.1375.8675-3.2931.8652-3.61797 0-6.55797-2.8745-6.55797-6.4188v-5.4052c0-.0178.012-.0297.03-.0297H43.65c.018 0 .03.0119.03.0297v5.4052Z" />
+								<defs>
+									<clipPath id="a">
+										<path fill="#fff" d="M0 0h48v47.4146H0z" />
+									</clipPath>
+								</defs>
+							</svg>
+							<h3 class="services-card__title">Finance and consultancy</h3>
+							<p class="services-card__sub-title">
+								Just type what's on your mind, and we'll get you there.
+							</p>
+						</div>
+					</div>
+					<div class="services__services-card services-card">
+						<div class="services-card__wrapper">
+							<svg class="services-card__ico" 
+							xmlns="http://www.w3.org/2000/svg" fill="#0D5C63" viewBox="0 0 48 48">
+								<path
+									d="M29.1416 13.624h11.9979v3.4453H29.1416V13.624Zm0 8.6133h11.9979v3.4453H29.1416v-3.4453Zm0 8.6133h11.9979v3.4453H29.1416v-3.4453Z" />
+								<path
+									d="M44.5674 5.01123H3.43187c-.90888.00091-1.78026.36419-2.42294 1.01012C.366264 6.66727.00481376 7.54307.00390625 8.45655V39.4644c.00090751.9135.36235775 1.7893 1.00502375 2.4352.64268.6459 1.51406 1.0092 2.42294 1.0101H44.5674c.9087-.0013 1.7798-.3648 2.4224-1.0106.6426-.6458 1.0042-1.5214 1.0055-2.4347V8.45655c-.0009-.91348-.3623-1.78928-1.005-2.4352-.6426-.64593-1.514-1.00921-2.4229-1.01012ZM3.43187 8.45655H22.2856V39.4644H3.43187V8.45655ZM25.7136 39.4644V8.45655h18.8538l.0034 31.00785H25.7136Z" />
+								<defs>
+									<clipPath id="a">
+										<path d="M0 5h48v37.92H0z" />
+									</clipPath>
+								</defs>
+							</svg>
+							<h3 class="services-card__title">
+								Financial Services Consulting
+							</h3>
+							<p class="services-card__sub-title">
+								the quick fox jumps over the lazy dog
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Experience -->
+			<section class="experience">
+				<div class="experience__container _container">
+					<div class="experience__short-table experience-short-table">
+						<h2 class="experience-short-table__title _standard-h2">
+							Designing Better Experience
+						</h2>
+						<p class="experience-short-table__sub-title _standard-subTitle">
+							Problems trying to resolve the conflict between the two major
+							realms of Classical physics: Newtonian mechanics
+						</p>
+					</div>
+					<div class="experience__cards-wrapper">
+						<div class="experience__experience-card experience-card">
+							<svg class="experience-card__ico" 
+							xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-2 -5 55 55"
+								fill="#0D5C63">
+								<path fill="#0D5C63"
+									d="M24.8406 22.8025c4.3042 0 7.6519-3.4954 7.6519-7.7852 0-4.2897-3.5071-7.62619-7.8113-7.62619s-7.6519 3.49539-7.6519 7.62619c0 4.2898 3.5071 7.7852 7.8113 7.7852Zm-.1594-12.2338c.1594 0 .1594 0 0 0 2.5506 0 4.623 2.0655 4.623 4.6075 0 2.5421-2.0724 4.4487-4.623 4.4487s-4.4636-2.0655-4.4636-4.4487c0-2.542 2.0724-4.6075 4.4636-4.6075Zm23.7523 11.28c-3.0289-2.701-7.0142-4.1309-11.159-3.972h-1.2753c-.3188 1.271-.7971 2.3832-1.4347 3.3365.9564-.1589 1.7535-.1589 2.71-.1589 3.0289-.1589 6.0578.7944 8.449 2.5421v11.4393h3.1883V22.3253l-.4783-.4766ZM33.6088 7.70826c.797-1.90656 3.0288-2.85984 5.1012-2.06544 1.913.7944 2.8695 3.01872 2.0724 5.08418-.6376 1.4299-2.0724 2.3832-3.5071 2.3832-.3188 0-.7971 0-1.1159-.1589.1594.7944.1594 1.5888.1594 2.2243v.9533c.3188 0 .6377.1589.9565.1589 3.9854 0 7.1737-3.1776 7.1737-6.99074 0-3.972-3.1883-7.1496-7.0143-7.1496-2.5506 0-4.7824 1.27104-6.0577 3.49536.797.47664 1.5941 1.11216 2.2318 2.06544ZM15.4352 21.3724c-.6377-.9533-1.1159-2.0655-1.4347-3.3365h-1.2753c-4.14483-.1589-8.13019 1.271-11.15907 3.8131l-.47824.4767v12.7104h3.18829V23.5967c2.55063-1.7477 5.4201-2.701 8.44902-2.5421.9564 0 1.9129.1589 2.71.3178Zm-2.7106-5.2429c.3189 0 .6377 0 .9565-.1589v-.9532c0-.7944 0-1.5888.1594-2.2244-.3188.1589-.797.1589-1.1159.1589-2.0724 0-3.82591-1.7477-3.82591-3.8131 0-2.06544 1.75351-3.81312 3.82591-3.81312 1.5942 0 3.0289.95328 3.6666 2.3832.6376-.7944 1.5941-1.5888 2.3912-2.22432-2.0724-3.33647-6.3766-4.44863-9.7243-2.3832C5.7104 5.1668 4.59449 9.45656 6.66688 12.793c1.27532 2.0655 3.50712 3.3365 6.05772 3.3365Zm25.1882 15.2522-.3188-.4766c-3.1883-3.4954-7.6519-5.5608-12.4344-5.4019-4.7824-.1589-9.4054 1.9065-12.5937 5.4019l-.3188.4766v12.0749c0 1.4299 1.1159 2.701 2.71 2.701h20.4051c1.4347 0 2.71-1.2711 2.71-2.701V31.3817h-.1594ZM34.7245 42.98H15.4354V32.4939c2.5506-2.5421 6.0577-3.8131 9.7242-3.8131 3.5072-.1589 7.0143 1.271 9.5649 3.8131V42.98Z" />
+								<defs>
+									<clipPath id="a">
+										<path fill="#fff" d="M.5 0h48v48H.5z" />
+									</clipPath>
+									<clipPath id="b">
+										<path fill="#fff" d="M1 2h48v44.2105H1z" />
+									</clipPath>
+								</defs>
+							</svg>
+							<h3 class="experience-card__title">972 +</h3>
+							<p class="experience-card__sub-title">Consumer Products</p>
+						</div>
+						<div class="experience__experience-card experience-card">
+							<svg class="experience-card__ico" 
+							xmlns="http://www.w3.org/2000/svg" fill="#0D5C63" viewBox="-5 -5 60 57">
+								<path
+									d="M43.6506 22.2819c-.5755.0042-1.1456.114-1.6828.3242l-5.7403-4.7847c.1412-.5216.2417-1.0627.2417-1.6331 0-3.3783-2.6666-6.0936-5.9844-6.0936s-5.9845 2.7153-5.9845 6.0936c0 .9653.2394 1.8647.6272 2.6739l-6.9635 8.3799c-.2788-.0531-.5615-.0816-.845-.0853-.4285 0-.8331.0732-1.2256.1804L9.9581 21.09c.1077-.3973.1795-.8092.1795-1.2455 0-2.7007-2.13522-4.8749-4.78754-4.8749-2.65231 0-4.78756 2.1742-4.78756 4.8749 0 2.7007 2.13525 4.8749 4.78756 4.8749.42849 0 .83304-.0731 1.22562-.1804l6.13522 6.2472c-.115.4049-.1754.824-.1795 1.2455 0 2.7007 2.1353 4.8749 4.7876 4.8749 2.6523 0 4.7875-2.1742 4.7875-4.8749 0-.5777-.1149-1.1212-.2944-1.6355l6.9731-8.3897c.5434.1609 1.1059.2754 1.6996.2754.9447-.0053 1.8745-.2401 2.7121-.6849l5.7427 4.7847c-.045.256-.0706.5151-.0766.7751 0 2.7007 2.1353 4.8749 4.7876 4.8749 2.6523 0 4.7875-2.1742 4.7875-4.8749 0-2.7007-2.1352-4.8749-4.7875-4.8749Z" />
+								<defs>
+									<clipPath id="a">
+										<path fill="#fff" d="M.5 10h48v27.0968H.5z" />
+									</clipPath>
+								</defs>
+							</svg>
+							<h3 class="experience-card__title">181 +</h3>
+							<p class="experience-card__sub-title">Financial Services</p>
+						</div>
+						<div class="experience__experience-card experience-card">
+							<svg class="experience-card__ico" 
+							xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 -6 50 60">
+								<path fill="#0D5C63"
+									d="M16.0637 33.9949c-.811-.8147-.3882-.585-2.3445-1.111-.8876-.239-1.6679-.6984-2.3735-1.2487L7.11121 42.0639c-.40974 1.0097.3556 2.1066 1.44013 2.0653l4.91776-.1884 3.3824 3.5888c.7466.7912 2.057.5446 2.4668-.465l4.858-11.9644c-1.0118.5662-2.1346.8981-3.2956.8981-1.82 0-3.5299-.7116-4.817-2.0034Zm26.6635 8.069-4.2345-10.4287c-.7056.5512-1.4859 1.0097-2.3735 1.2487-1.9665.5288-1.5353.2982-2.3445 1.111-1.2871 1.2918-2.9979 2.0034-4.8179 2.0034-1.1611 0-2.2839-.3328-3.2956-.8981l4.858 11.9644c.4097 1.0096 1.7211 1.2562 2.4668.465l3.3833-3.5888 4.9178.1884c1.0845.0413 1.8498-1.0565 1.4401-2.0653ZM31.5459 31.8733c1.4261-1.4578 1.5894-1.3322 3.6204-1.8881 1.2964-.3553 2.31-1.3913 2.6572-2.7169.6981-2.6625.517-2.3409 2.422-4.2891.9492-.9703 1.3197-2.385.9725-3.7106-.6972-2.6606-.6981-2.2894 0-4.9528.3472-1.3256-.0233-2.7403-.9725-3.7106-1.905-1.94814-1.7239-1.62751-2.422-4.28907-.3472-1.32563-1.3608-2.36157-2.6572-2.71688-2.6022-.71344-2.2886-.52687-4.1954-2.47594-.9492-.970308-2.3333-1.349995-3.6297-.994683-2.6012.7125-2.2381.713437-4.844 0-1.2964-.355312-2.6805.023438-3.6297.994683-1.905 1.94813-1.5914 1.7625-4.1944 2.47594-1.2964.35531-2.31 1.39125-2.6572 2.71688-.6972 2.66156-.5171 2.34093-2.42203 4.28907-.9492.9703-1.32066 2.385-.97253 3.7106.6972 2.6588.69813 2.2875 0 4.9519-.3472 1.3256.02333 2.7403.97253 3.7115 1.90493 1.9482 1.72383 1.6266 2.42203 4.2891.3472 1.3256 1.3608 2.3616 2.6572 2.7169 2.0888.5719 2.2446.4819 3.6194 1.8881 1.2348 1.2628 3.1584 1.4888 4.6424.5456.5935-.3784 1.2819-.5793 1.9848-.5793.7029 0 1.3913.2009 1.9847.5793 1.4831.9432 3.4067.7172 4.6415-.5456ZM16.1141 16.4946c0-4.9716 3.9424-9.00191 8.8051-9.00191 4.8627 0 8.8051 4.03031 8.8051 9.00191 0 4.9715-3.9424 9.0018-8.8051 9.0018-4.8627 0-8.8051-4.0303-8.8051-9.0018Z" />
+								<defs>
+									<clipPath id="a">
+										<path fill="#fff" d="M7 0h35.84v48H7z" />
+									</clipPath>
+								</defs>
+							</svg>
+							<h3 class="experience-card__title">98%</h3>
+							<p class="experience-card__sub-title">Environmental</p>
+						</div>
+						<div class="experience__experience-card experience-card">
+							<svg class="experience-card__ico" 
+							xmlns="http://www.w3.org/2000/svg" viewBox="-5 -10 60 60"
+								fill="#0D5C63">
+									<path
+										d="M42.5886 8.52554H37.519V3.45592c0-.89637-.3561-1.75602-.9899-2.38984-.6338-.633829-1.4935-.9899081-2.3898-.9899081H13.8608c-.8964 0-1.756.3560791-2.3899.9899081-.6338.63382-.9899 1.49347-.9899 2.38984v5.06962H5.41142c-1.34455 0-2.63403.53412-3.58477 1.48486-.950734.9507-1.484853 2.2402-1.484853 3.5848v23.6582c0 .8963.356079 1.756.989903 2.3898.63383.6339 1.49348.9899 2.38984.9899H44.2785c.8964 0 1.756-.356 2.3898-.9899.6339-.6338.99-1.4935.99-2.3898V13.5952c0-1.3446-.5342-2.6341-1.4849-3.5848-.9507-.95074-2.2402-1.48486-3.5848-1.48486ZM13.8608 3.45592h20.2785v5.06962H13.8608V3.45592ZM44.2785 37.2534H3.72154V22.0445H17.2405v8.4494h13.519v-8.4494h13.519v15.2089ZM20.6203 22.0445h6.7595v5.0696h-6.7595v-5.0696ZM3.72154 18.6648v-5.0696c0-.4482.17804-.878.49496-1.195.31691-.3169.74673-.4949 1.19492-.4949H42.5886c.4482 0 .878.178 1.195.4949.3169.317.4949.7468.4949 1.195v5.0696H3.72154Z" />
+							</svg>
+							<h3 class="experience-card__title">746 +</h3>
+							<p class="experience-card__sub-title">Business & Finance</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="advices">
+
+				<div class="advices__container _container">
+					<div class="advices__short-table-wrapper">
+						<h3 class="advices__title _standard-h2">
+							Practice Advice
+						</h3>
+						<p class="advices__sub-title _standard-subTitle">
+							Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
+						</p>
+					</div>
+
+					<div class="advices__cards-wrapper advices-cards">
+
+						<div class="advices-cards__card">
+							<div class="advices-cards__info-wrapper">
+								<div class="advices-cards__title">
+									A single source of truth
+								</div>
+								<div class="advices-cards__sub-title">
+									Newton thought that light was made up of particles, but then it was discovered 
+								</div>
+							</div>
+
+							<div class="advices-cards__ico">
+								<img src="/img/advices-section/advices-card__ico-1.jpg" srcset="/img/advices-section/advices-card__ico-1@2.jpg 2x" alt="#9aa48d">
+							</div>
+						</div>
+
+						<div class="advices-cards__card">
+							<div class="advices-cards__info-wrapper">
+								<div class="advices-cards__title">
+									Fastest way to organize
+								</div>
+								<div class="advices-cards__sub-title">
+									“Quantum mechanics” is the description of the behaviour of matter
+								</div>
+							</div>
+
+							<div class="advices-cards__ico">
+								<img src="/img/advices-section/advices-card__ico-2.jpg" srcset="/img/advices-section/advices-card__ico-2@2.jpg 2x" alt="#9aa48d">
+							</div>
+						</div>
+
+						<div class="advices-cards__card">
+							<div class="advices-cards__info-wrapper">
+								<div class="advices-cards__title">
+									Fastest way to take action
+								</div>
+								<div class="advices-cards__sub-title">
+									They describe a universe consisting of bodies moving
+								</div>
+							</div>
+
+							<div class="advices-cards__ico">
+								<img src="/img/advices-section/advices-card__ico-3.jpg" srcset="/img/advices-section/advices-card__ico-3@2.jpg 2x" alt="#9aa48d">
+							</div>
+						</div>
+
+						<div class="advices-cards__card">
+							<div class="advices-cards__info-wrapper">
+								<div class="advices-cards__title">
+									Work better together
+								</div>
+								<div class="advices-cards__sub-title">
+									They finally obtained a consistent description of the behaviour
+								</div>
+							</div>
+
+							<div class="advices-cards__ico">
+								<img src="/img/advices-section/advices-card__ico-4.jpg" srcset="/img/advices-section/advices-card__ico-4@2.jpg 2x" alt="#9aa48d">
+							</div>
+						</div>
 
 
-		<script src="js/header.js"></script>
-	</body>
+					</div>
+				</div>
+			</section>
+
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		</main>
+	</div>
+	<script src="js/header.js"></script>
+</body>
+
 </html>

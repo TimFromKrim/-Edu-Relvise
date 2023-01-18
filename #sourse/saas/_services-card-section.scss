@@ -1,0 +1,148 @@
+.services {
+
+	z-index: 2;
+	margin-top: -111px;
+
+	&__container {
+		display: grid; 
+		grid-auto-columns: 1fr; 
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: 1fr; 
+		gap: 0 30px;
+	}
+
+	&__services-card {
+		width: 328px;
+		padding: 40px 35px;
+	}
+}
+.services-card {
+	position: relative;
+
+	z-index: 2;
+	box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+
+	background: white;
+
+	transition: 0.25s ease-in-out;
+
+	@media (min-width: 1101px) {
+		&:hover {
+			background-color: #0D5C63;
+			svg {
+				fill: white;
+				}
+
+			.services-card__title {
+				color: white;
+			}
+
+			.services-card__sub-title {
+				color: white;
+			}
+		}
+	}
+
+	&__ico {
+		width: 48px;
+		margin-bottom: 10px;
+		fill: #0D5C63;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		color: $textColorDark;
+
+		font-family: 'Montserrat', serif;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 133%;
+		letter-spacing: 0.1px;
+	}
+
+	&__sub-title {
+	color: $textColorGrey;
+		font-family: 'Montserrat', serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 143%;
+	letter-spacing: 0.2px;
+}
+}
+
+@media (max-width: 1100px) {
+	.services {
+		&__container {
+			grid-template-columns: 1fr; 
+			grid-template-rows: 1fr 1fr 1fr; 
+			gap: 30px 0;
+		}
+
+		&__services-card {
+			width: 500px;
+		}
+	}
+
+	.services-card {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			max-width: 400px;
+		}
+
+		&__sub-title {
+			text-align: center;
+		}
+
+		&:nth-child(even) {
+			justify-self: end;
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.services {
+		&__container {
+		}
+
+		&__services-card {
+			width: 300px;
+		}
+	}
+
+	.services-card {
+		&__wrapper {
+			display: block;
+			flex-direction: column;
+			align-items: center;
+
+			max-width: unset;
+		}
+
+		&__sub-title {
+			text-align: start;
+		}
+
+		&:nth-child(even) {
+			justify-self: center;
+		}
+
+		justify-self: center;
+	}
+}
+
+@media (max-width: 320px) {
+	.services {
+		&__container {
+		}
+
+		&__services-card {
+			width: 260px;
+			padding: 25px 20px;
+		}
+	}
+}
