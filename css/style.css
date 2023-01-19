@@ -627,6 +627,9 @@ body {
     font-size: 27px;
   }
 }
+.advices {
+  margin-bottom: 80px;
+}
 .advices__short-table-wrapper {
   margin: 0 auto;
   margin-top: 100px;
@@ -712,5 +715,108 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 35px 35px;
+  }
+}
+.videoInfo {
+  background-color: white;
+  padding-bottom: 136px;
+  padding-top: 100px;
+}
+.videoInfo__short-table-wrapper {
+  margin-bottom: 100px;
+}
+.videoInfo__sub-title {
+  max-width: 510px;
+  margin: 0 auto;
+  text-align: center;
+}
+.videoInfo-wrapper {
+  display: grid;
+  grid-template-columns: 1.6fr 1.4fr;
+  gap: 0px 120px;
+}
+.videoInfo-wrapper__video {
+  position: relative;
+}
+.videoInfo-wrapper__video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.videoInfo-wrapper__title {
+  text-align: left;
+}
+.videoInfo-wrapper__sub-title {
+  margin-bottom: 50px;
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.videoInfo-wrapper-item {
+  position: relative;
+  margin-left: 56px;
+  margin-bottom: 30px;
+}
+.videoInfo-wrapper-item:last-child {
+  margin-bottom: 0;
+}
+.videoInfo-wrapper-item:last-child::before {
+  background: url(../img/videoInfo/spidometr.svg);
+}
+.videoInfo-wrapper-item::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: -56px;
+  background: url(../img/videoInfo/cheliki.svg);
+  background-size: 32px 32px;
+  z-index: 10;
+}
+.videoInfo-wrapper-item__title {
+  margin-bottom: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.videoInfo-wrapper-item--item__sub-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+@media (width = 820px) {
+  .videoInfo-wrapper {
+    display: grid;
+    gap: 0 50px;
+  }
+}
+@media (width < 820px) {
+  .videoInfo-wrapper {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.4fr;
+    gap: 50px 0;
+  }
+  .videoInfo-wrapper__video {
+    position: relative;
+  }
+  .videoInfo-wrapper__video iframe {
+    position: relative;
   }
 }
