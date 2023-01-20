@@ -22,7 +22,6 @@ body {
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
-	padding: 0 5px;
 }
 
 ._container {
@@ -88,3 +87,5 @@ body {
 @import "_experience-section";
 @import "_advices-section.scss";
 @import "_videoInfo-section";
+@import "_labels-section.scss";
+@import "_subscribe-section";
