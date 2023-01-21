@@ -59,3 +59,13 @@
 		gap: 30px 20px;
 	}
 }
+
+@media (max-width: 320px) {
+	.labels__wrapper {
+		gap: 30px 0;
+	}
+
+	.labels__ico {
+		width: 120px;
+	}
+}

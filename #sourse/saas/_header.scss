@@ -2,7 +2,7 @@ $textColorDark: #252b42;
 $textColorGrey: #737373;
 
 .header {
-	transition: 0.3s;
+	transition: 0.3s ease-in-out;
 
 	position: fixed;
 	top: 0;
@@ -16,7 +16,9 @@ $textColorGrey: #737373;
 		display: flex;
 		align-items: center;
 
-		min-height: 104px;
+		height: 104px;
+
+		transition: 0.3s ease-in-out;
 	}
 
 	&__logo {
@@ -36,10 +38,20 @@ $textColorGrey: #737373;
 	}
 }
 
+.header-minimize {
+	height: 80px;
+	.header__container {
+		height: 80px;
+	}
+	transition: 0.4s ease-in-out;
+}
+
 .header-scrolled {
 	backdrop-filter: blur(8px);
 	background: rgba($color: #ffffff, $alpha: 0.7);
 	box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.3);
+
+	transition: 0.4s ease-in-out;
 }
 
 .menu {
@@ -150,6 +162,8 @@ $textColorGrey: #737373;
 		backdrop-filter: blur(8px);
 		background: rgba($color: #ffffff, $alpha: 0.7);
 		box-shadow: 0 1px 10px rgba($color: #000000, $alpha: 0.3);
+
+		transition: 0.4s ease-in-out;
 	}
 }
 
@@ -163,7 +177,9 @@ $textColorGrey: #737373;
 	}
 
 	.header {
+		height: 55px;
 		&__container {
+			height: 55px;
 			justify-content: space-between;
 		}
 	}

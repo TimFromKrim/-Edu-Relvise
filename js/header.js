@@ -14,10 +14,14 @@ function burgerHandler(e) {
 }
 
 window.addEventListener('scroll', () => {
-	if (window.scrollY > 0) {
-	  header.classList.add('header-scrolled');
-	} else {
-	  header.classList.remove('header-scrolled');
+	if (window.innerWidth > 560) {
+		if (window.scrollY > 0) {
+			header.classList.add('header-scrolled');
+			header.classList.add("header-minimize");
+		} else {
+			header.classList.remove('header-scrolled');
+				header.classList.remove("header-minimize");
+		}
 	}
 });
 
