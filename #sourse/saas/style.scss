@@ -2,6 +2,7 @@
 @import "_fonts.scss";
 
 $textColorDark: #252B42;
+$textColorGrey: #737373;
 
 body {
 	height: 100%;
@@ -78,6 +79,7 @@ body {
 	font-size: 14px;
 	line-height: 143%;
 	letter-spacing: 0.2px;
+	color: $textColorGrey;
 }
 
 @import "_header.scss";
@@ -89,3 +91,4 @@ body {
 @import "_videoInfo-section";
 @import "_labels-section.scss";
 @import "_subscribe-section";
+@import "_support-section";
