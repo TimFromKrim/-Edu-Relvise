@@ -1,0 +1,67 @@
+.contact {
+	padding: 40px 0;
+
+	background-color: white;
+
+	&__container {
+		padding: 0 30px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info {}
+	&__title {
+		margin-bottom: 10px;
+	
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 133%;
+		letter-spacing: 0.1px;
+		color: $textColorDark;
+
+	}
+	&__sub-title {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 143%;
+		letter-spacing: 0.2px;
+		color: $textColorGrey;
+
+	}
+	&__button {
+		background: #FF7B47;
+		border-radius: 5px;
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 200%;
+		text-align: center;
+		letter-spacing: 0.2px;
+		color: #FFFFFF;
+
+		padding: 15px 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.contact__wrapper {
+		flex-direction: column;
+	}
+
+	.contact__info {
+		margin-bottom: 40px;
+	}
+
+	.contact__button {
+		max-width: 300px;
+		align-self: center;
+	}
+}
